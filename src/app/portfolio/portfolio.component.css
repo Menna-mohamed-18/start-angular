@@ -1,0 +1,151 @@
+.star i{
+    color: #2C3E50;
+    position: relative;
+}
+.star i::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 170%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+.star::after{
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    right: 51.5%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50; 
+}
+
+.star{
+    position: relative;
+}
+.portfolio-txt h2{
+    margin-top: 9%;
+    font-size: 2.5rem ;
+    color: #2C3E50;
+    font-family: "system-ui";
+    font-weight: 700;
+}
+.port-img {
+    position: relative;
+}
+.layer{
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.port-img:hover .layer{
+    opacity: 1;
+}
+.layer i {
+    font-size: 6em;
+    padding:25% 0 0 40%;
+}
+.img-layer{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    vertical-align: middle !important;
+    /* background-color: aqua; */
+
+}
+.img-layer img{
+    width: 600px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+@media screen and (min-width:0px) and (max-width:600px){
+  
+    .portfolio-txt{
+        margin-top: 30%;
+}
+.portfolio-txt h2{
+    font-size:30px
+}
+.img-layer{
+    top: 20%;
+    left: 0%;
+
+}
+.img-layer img{
+    width: 500px;
+}
+.star::after{
+    right: 54.5%;
+}
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .portfolio-txt{
+        margin-top: 20%;
+}
+.portfolio-txt h2{
+    font-size:30px
+}
+
+.img-layer{
+    top: 20%;
+    left: 0%;
+}
+.img-layer img{
+    width: 650px;
+}
+.star::after{
+    right: 54.5%;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .portfolio-txt{
+        margin-top: 16%;
+}
+.portfolio-txt h2{
+    font-size:35px
+}
+.img-layer{
+    top: 20%;
+    left: 12%;
+}
+.img-layer img{
+    width: 600px;
+}
+.star::after{
+    right: 52.5%;
+}
+}
+
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .portfolio-txt{
+        margin-top: 14%;
+}
+.portfolio-txt h2{
+    font-size:40px
+}
+.img-layer{
+    top: 20%;
+    left: 24%;
+}
+.img-layer img{
+    width: 600px;
+}
+.star::after{
+    right: 52%;
+}
+
+}

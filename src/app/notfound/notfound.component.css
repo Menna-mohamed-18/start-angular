@@ -1,0 +1,50 @@
+
+.not{
+    padding: 19% 0 19% 39%;
+    color: rgb(66, 65, 65);
+}
+.not h1{
+    font-size: 4rem;
+    padding-left: 9%;
+   
+}
+
+
+@media screen and (min-width:0px) and (max-width:600px){
+    .not{
+        padding: 60% 0 60% 29%;
+    }
+    .not h1{
+        font-size: 4rem;
+        padding-left: 9%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .not{
+        padding: 45% 0 45% 29%;
+    }
+    .not h1{
+        font-size: 4rem;
+        padding-left: 9%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .not{
+        padding: 40% 0 40% 36%;
+    }
+    .not h1{
+        font-size: 4rem;
+        padding-left: 9%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .not{
+        padding: 30% 0 30% 39%;
+    }
+    .not h1{
+        font-size: 4rem;
+        padding-left: 9%;
+    }
+}

@@ -1,0 +1,112 @@
+.about-txt h2{
+    margin-top: 14%;
+    font-size: 2.5rem ;
+    color: white;
+    font-family: "system-ui";
+    font-weight: 700;
+}
+.star i{
+    color: white;
+    position: relative;
+}
+.star i::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 170%;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+}
+
+.star::after{
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    right: 51.5%;
+    width: 80px;
+    height: 4px;
+    background-color: white; 
+}
+
+.star{
+    position: relative;
+}
+section{
+    background-color: #1ABC9C;
+
+}
+.p-txt p{
+    text-align: left!important;
+    color: white;
+    /* padding-left: 8%; */
+}
+.container{
+    width: 80%;
+}
+.about-txt{
+    padding-bottom: 15%;
+    padding-top: 7%;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:600px){
+
+    .about-txt h2{
+        font-size: 30px;
+        margin-top: 35%;
+
+    }
+
+    .star::after{
+        right: 54.5%;
+    }
+    .p-txt{
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .about-txt h2{
+        font-size: 30px;
+        margin-top: 27%;
+
+    }
+
+    .star::after{
+        right: 54.5%;
+    }
+    .p-txt{
+        padding-bottom: 6%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .about-txt h2{
+        font-size: 35px;
+        margin-top: 28%;
+
+    }
+
+    .star::after{
+        right: 52.5%;
+    }
+    .p-txt{
+        padding-bottom: 15%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .about-txt h2{
+        font-size: 35px;
+        margin-top: 24%;
+
+    }
+
+    .star::after{
+        right: 52%;
+    }
+    .p-txt{
+        padding-bottom: 10%;
+    }
+}

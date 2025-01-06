@@ -1,0 +1,114 @@
+.avatar img{
+    width: 250px;
+    margin-bottom: 1rem ;
+    margin-top: 12%;
+
+}
+
+.home{
+    background-color: #1ABC9C;
+/* background-size: cover; */
+
+}
+
+.home-txt h1{
+    font-size: 3rem ;
+    color: white;
+    font-family: "system-ui";
+    font-weight: 700;
+}
+.star i{
+    color: white;
+    position: relative;
+}
+.star i::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 170%;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+}
+
+.star::after{
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    right: 51.5%;
+    width: 80px;
+    height: 4px;
+    background-color: white; 
+}
+
+.star{
+    position: relative;
+}
+.home-txt p{
+    color: white;
+
+}
+
+
+@media screen and (min-width:0px) and (max-width:600px){
+    .star::after{
+        right: 54.5%;
+    }
+    .home-txt h1{
+        font-size: 2.5rem ;
+     
+    }
+    .avatar img{
+        margin-top: 28%;
+    }
+    .home-txt{
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) { 
+     .star::after{
+    right: 54.5%;
+}
+.home-txt h1{
+    font-size: 2.5rem ;
+ 
+}
+.avatar img{
+    margin-top: 20%;
+}
+.home-txt{
+    margin-bottom: 4%;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .star::after{
+        right: 52.5%;
+    }
+    .home-txt h1{
+        font-size: 2.5rem ;
+     
+    }
+    .avatar img{
+        margin-top: 16%;
+    }
+    .home-txt{
+        margin-bottom: 2%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .star::after{
+        right: 52%;
+    }
+    .home-txt h1{
+        font-size: 2.5rem ;
+     
+    }
+    .avatar img{
+        margin-top: 12%;
+    }
+    .home-txt{
+        margin-bottom: 4%;
+    }
+}

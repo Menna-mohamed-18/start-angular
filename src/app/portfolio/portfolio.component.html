@@ -1,0 +1,46 @@
+
+
+<section >
+    <div class="portfolio-txt text-center">
+        <h2 class="text-uppercase">portfolio component</h2>
+        <div class="star">
+            <i class="fa-solid fa-star "></i>
+        </div>
+    </div>
+
+
+    <div class="container pt-3 ">
+        <div class="row g-5 pb-5">
+            @for(product of productList ; track $index){
+                <div class="col-sm-12 col-md-6  col-lg-4 col-md-4">
+                    <div class="port-img" (click)="itemInfo(product)">
+                       <img [src]="product.src"  class="w-100 rounded-3" [alt]="product.alt">
+                       <div class="layer rounded-3">
+                           <i class="text-white fa-solid fa-plus "></i>
+                       </div>
+                    </div>
+                   </div>
+
+                  
+            }
+          
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    @if(isclicked==true){
+       <div class="big-layer  position-fixed w-100 top-0 h-100 bg-primary bg-opacity-25  " (click)="hideBigLayer($event)">
+       
+        <div class="img-layer " (click)="preventClose($event)">
+            <img [src]="productinfo.src"  [alt]="productinfo.alt">
+
+        </div>
+       </div>
+       }
+</section>

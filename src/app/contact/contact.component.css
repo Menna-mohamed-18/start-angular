@@ -1,0 +1,266 @@
+
+.form-control {
+    position: relative;
+}
+
+
+label {
+    font-size: 16px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0; 
+    top: 50%; 
+    left: 10px;
+    transform: translateY(-50%); 
+}
+
+
+.form-control:not(:placeholder-shown) + label {
+    opacity: 1; 
+    color: #1ABC9C;
+    top: -30px; 
+    transform: translateY(0); 
+}
+
+
+.form-control:placeholder-shown + label {
+    opacity: 0; 
+    top: 0%; 
+    transform: translateY(-50%); 
+}
+
+
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
+.contact-btn {
+    background-color: #1abc9c;
+    cursor: pointer;
+    margin-top: 1.5rem !important;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #16a085;
+}
+
+
+p {
+    color: #2C3E50;
+}
+
+
+.contact-txt h2 {
+    margin-top: 9%;
+    font-size: 2.5rem ;
+    color: #2C3E50;
+    font-family: "system-ui";
+    font-weight: 700;
+}
+
+
+.star {
+    position: relative;
+}
+
+.star i {
+    color: #2C3E50;
+    position: relative;
+}
+
+.star i::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 170%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+.star::after {
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    right: 51.5%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+form{
+    width: 50%;
+    margin-top: 2%;
+}
+
+@media screen and (min-width:0px) and (max-width:600px){
+    form{
+        width: 100%;
+        margin-top: 6%;
+    }
+    .contact-txt h2{
+        margin-top: 30%;
+    font-size: 1.9rem ;
+
+    }
+    .star::after{
+        right: 54.5%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+      form{
+        width: 100%;
+        margin-top: 4%;
+    }
+    .contact-txt h2{
+        margin-top: 20%;
+    font-size: 1.9rem ;
+
+    }
+    .star::after{
+        right: 54.5%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    form{
+        margin-top: 4%;
+    }
+    .contact-txt h2{
+        margin-top: 20%;
+    font-size: 2rem ;
+
+    }
+    .star::after{
+        right: 52.5%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) { form{
+    margin-top: 4%;
+}
+.contact-txt h2{
+    margin-top: 13%;
+font-size: 2.2rem ;
+
+}
+.star::after{
+    right: 52%;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.star {
+    position: relative;
+}
+.star i {
+    color: #2C3E50;
+    position: relative;
+}
+.star i::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 170%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+.star::after {
+    content: '';
+    position: absolute;
+    bottom: 36%;
+    right: 51.5%;
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+
+.contact-txt h2 {
+    margin-top: 9%;
+    font-size: 2.5rem !important;
+    color: #2C3E50;
+    font-family: "system-ui";
+    font-weight: 700;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.contact-btn {
+    background-color: #1abc9c;
+    cursor: pointer;
+    margin-top: 1.5rem !important;
+    color: white;
+    transition: background-color 0.3s;
+}
+.contact-btn:hover {
+    background-color: #16a085;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control:focus + label,
+.form-control:not(:placeholder-shown) + label {
+    opacity: 1;
+    color: blue;
+    transform: translateY(-50px);
+    transition: all 0.5s ;
+}
+
+
+label {
+    font-size: 16px;
+    position: absolute;
+    transition: all 0.5s ;
+    opacity: 0;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+
+p {
+    color: #2C3E50;
+} */
